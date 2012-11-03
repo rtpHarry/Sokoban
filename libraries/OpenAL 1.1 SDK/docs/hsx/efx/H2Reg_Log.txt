@@ -1,0 +1,135 @@
+===============================================================================
+Log File:             	D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg_Log.txt
+Date:                 	11/07/2007 12:15:13
+Operating System:      	Windows XP 5.1 (Build 2600) Service Pack 2
+SysLocale.DefaultLCID: 	0x0809 (2057)
+SysLocale.PriLangID:   	0x0009 (9)
+SysLocale.SubLangID:   	0x0002 (2)
+DecimalSeparator:      	.
+-------------------------------------------------------------------------------
+EXE Path =          	D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg.exe
+EXE Version =       	1.5.0.0
+Cmdline Param(s) =  	-u | -q
+Actual CmdLine =  	"D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg.exe" -u -q
+_RunDir =           	D:\OpenAL 1.1 SDK\docs\hsx\efx
+_ModuleName =       	H2Reg.exe
+_ModuleDir =        	D:\OpenAL 1.1 SDK\docs\hsx\efx
+_ModulePath =        	D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg.exe
+Module Version =       	1.5.0.0
+-------------------------------------------------------------------------------
+_hhInstalled =      	YES
+_hhVerStr =         	5.2.3790.1194
+_hhFriendlyVerStr = 	> 1.4a
+-------------------------------------------------------------------------------
+_ieInstalled =      	YES
+_ieVerStr =         	6.0.2900.2180
+_ieFriendlyVerStr = 	Internet Explorer 6 (Windows XP SP2)
+===============================================================================
+MS Help 2.x Runtime Found: YES
+    2.2.3077.0, C:\Program Files\Common Files\Microsoft Shared\Help\hxds.dll
+    2.2.3077.0, C:\Program Files\Common Files\Microsoft Shared\Help\hxvz.dll
+NT Admin Log On: YES
+PC Language ID = en
+-------------------------------------------------------------------------------
+Quiet Mode (-Q): Yes
+Registration Mode (-R): No
+UnRegistration Mode (-U): Yes
+Append Log Mode (-A): No
+No NT Admin Check (-N): No
+Merge Indexes Mode (-M): No
+Cmd Script File (CmdFile=): D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg.ini
+User Dir 1 (UserDir1=): 
+User Dir 2 (UserDir2=): 
+User Dir 3 (UserDir3=): 
+User Dir 4 (UserDir4=): 
+===============================================================================
+CmdFile = D:\OpenAL 1.1 SDK\docs\hsx\efx\H2Reg.ini
+<windir> = C:\WINDOWS
+<winsysdir> = C:\WINDOWS\system32
+<programfilesdir> = C:\Program Files
+<exedir> = D:\OpenAL 1.1 SDK\docs\hsx\efx
+<exedirparent> = D:\OpenAL 1.1 SDK\docs\hsx
+<cmdfiledir> = D:\OpenAL 1.1 SDK\docs\hsx\efx
+<cmdfiledirparent> = D:\OpenAL 1.1 SDK\docs\hsx
+<userdir1> = 
+<userdir1parent> = 
+<userdir2> = 
+<userdir2parent> = 
+<userdir3> = 
+<userdir3parent> = 
+<userdir4> = 
+<userdir4parent> = 
+-------------------------------------------------------------------------------
+[Reg_Namespace]
+openal.efx|openal_efx.HxC|OpenAL Effects Extension (EFX)
+
+[Reg_Title]
+openal.efx|openal_efx||openal_efx.HxS|openal_efx.HxS||||||
+
+[Reg_Plugin]
+ms.vsipcc+|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+ms.vscc|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+ms.vscc.2003|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+
+[Reg_Filter]
+
+[UnReg_Namespace]
+openal.efx
+
+[UnReg_Title]
+openal.efx|openal_efx|
+
+[UnReg_Plugin]
+ms.vsipcc+|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+ms.vscc|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+ms.vscc.2003|_DEFAULT|openal.efx|_DEFAULT|openal_efx.HxA
+
+[UnReg_Filter]
+
+[Merge_Namespace]
+ms.vsipcc+
+ms.vscc
+ms.vscc.2003
+-------------------------------------------------------------------------------
+12:15:13   [UnReg_Filter] - Lines To Process = 0
+-------------------------------------------------------------------------------
+12:15:13   [UnReg_Plugin] - Lines To Process = 3
+12:15:13     <nsName_Parent>="ms.vsipcc+"
+12:15:13     <HxT_Parent>="_DEFAULT"
+12:15:13     <nsName_Child>="openal.efx"
+12:15:13     <HxT_Child>="_DEFAULT"
+12:15:13     <HxA_Child>="D:\OpenAL 1.1 SDK\docs\hsx\efx\openal_efx.HxA"
+12:15:13     NS Wild Card "ms.vsipcc+" matches = 0 item(s)
+12:15:13   Parent Namespace: No matching Namespace name(s) found on this PC: "ms.vsipcc+"
+12:15:13   >>Since objective was to remove the item(s), and its already removed, don't log as an error.
+12:15:13   
+12:15:13     <nsName_Parent>="ms.vscc"
+12:15:13     <HxT_Parent>="_DEFAULT"
+12:15:13     <nsName_Child>="openal.efx"
+12:15:13     <HxT_Child>="_DEFAULT"
+12:15:13     <HxA_Child>="D:\OpenAL 1.1 SDK\docs\hsx\efx\openal_efx.HxA"
+12:15:13   Parent Namespace: No matching Namespace name(s) found on this PC: "ms.vscc"
+12:15:13   >>Since objective was to remove the item(s), and its already removed, don't log as an error.
+12:15:13   
+12:15:13     <nsName_Parent>="ms.vscc.2003"
+12:15:13     <HxT_Parent>="_DEFAULT"
+12:15:13     <nsName_Child>="openal.efx"
+12:15:13     <HxT_Child>="_DEFAULT"
+12:15:13     <HxA_Child>="D:\OpenAL 1.1 SDK\docs\hsx\efx\openal_efx.HxA"
+12:15:13   Unplugging "openal.efx" from parent "MS.VSCC.2003"
+12:15:13    -->UnRegistered OK
+-------------------------------------------------------------------------------
+12:15:13   [UnReg_Title] - Lines To Process = 1
+12:15:13     <nsName>="openal.efx"
+12:15:13     <TitleID>="openal_efx"
+12:15:13     <LangID>=""
+12:15:13    -->UnRegistered OK
+-------------------------------------------------------------------------------
+12:15:13   [UnReg_Namespace] - Lines To Process = 1
+12:15:13     <nsName>="openal.efx"
+12:15:13   Unregistering Namespace: "openal.efx"
+12:15:13    -->UnRegistered OK
+===============================================================================
+
+--END OF FILE--
+

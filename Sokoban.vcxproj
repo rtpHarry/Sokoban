@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E90630D-354C-4D16-A3A6-8851EBE5EB16}</ProjectGuid>
+    <RootNamespace>Sokoban</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and $(VisualStudioVersion) == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>OldSyntax</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Intermediate\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Intermediate\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);I:\rtpSoftware\sokoban\6_RequiredLibraries\</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\freealut-1.1.0-bin\include;I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\OpenAL 1.1 SDK\include;I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\DevIL-SDK-x86-1.7.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>alut.lib;openal32.lib;devil.lib;ilu.lib;ilut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Build\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <AdditionalLibraryDirectories>I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\freealut-1.1.0-bin\lib;I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\OpenAL 1.1 SDK\libs\Win32;I:\rtpSoftware\sokoban\6_Sokoban\Sokoban\libraries\DevIL-SDK-x86-1.7.8\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="_Main_File.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EncodedLevel.cpp" />
+    <ClCompile Include="FontGL.cpp" />
+    <ClCompile Include="GLee.c" />
+    <ClCompile Include="KeyQueue.cpp" />
+    <ClCompile Include="LevelSet.cpp" />
+    <ClCompile Include="Matrix4x4.cpp" />
+    <ClCompile Include="Model3D.cpp" />
+    <ClCompile Include="MoveList.cpp" />
+    <ClCompile Include="NeHeGL.cpp" />
+    <ClCompile Include="ShadowMapEffect.cpp" />
+    <ClCompile Include="SokobanActiveLevel.cpp" />
+    <ClCompile Include="SokobanApp.cpp" />
+    <ClCompile Include="SokobanGame.cpp" />
+    <ClCompile Include="SokobanHighscore.cpp" />
+    <ClCompile Include="SokobanHUD.cpp" />
+    <ClCompile Include="SokobanLevelManager.cpp" />
+    <ClCompile Include="SokobanMenu.cpp" />
+    <ClCompile Include="SokobanRenderer.cpp" />
+    <ClCompile Include="SokobanSoundManager.cpp" />
+    <ClCompile Include="SoundCache.cpp" />
+    <ClCompile Include="TextureCache.cpp" />
+    <ClCompile Include="Theme.cpp" />
+    <ClCompile Include="ThemeDefault.cpp" />
+    <ClCompile Include="ThemeDesert.cpp" />
+    <ClCompile Include="ThemeEvilForest.cpp" />
+    <ClCompile Include="ThemeModel.cpp" />
+    <ClCompile Include="ThemeSimple.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EncodedLevel.h" />
+    <ClInclude Include="FontGL.h" />
+    <ClInclude Include="GLee.h" />
+    <ClInclude Include="KeyQueue.h" />
+    <ClInclude Include="LevelSet.h" />
+    <ClInclude Include="Matrix4x4.h" />
+    <ClInclude Include="Model3D.h" />
+    <ClInclude Include="MoveList.h" />
+    <ClInclude Include="NeHeGL.h" />
+    <ClInclude Include="ShadowMapEffect.h" />
+    <ClInclude Include="Shared.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SokobanActiveLevel.h" />
+    <ClInclude Include="SokobanApp.h" />
+    <ClInclude Include="SokobanGame.h" />
+    <ClInclude Include="SokobanHighscore.h" />
+    <ClInclude Include="SokobanHUD.h" />
+    <ClInclude Include="SokobanLevelManager.h" />
+    <ClInclude Include="SokobanMenu.h" />
+    <ClInclude Include="SokobanRenderer.h" />
+    <ClInclude Include="SokobanSoundManager.h" />
+    <ClInclude Include="SokobanSymbols.h" />
+    <ClInclude Include="SoundCache.h" />
+    <ClInclude Include="TextureCache.h" />
+    <ClInclude Include="Theme.h" />
+    <ClInclude Include="ThemeDefault.h" />
+    <ClInclude Include="ThemeDesert.h" />
+    <ClInclude Include="ThemeEvilForest.h" />
+    <ClInclude Include="ThemeModel.h" />
+    <ClInclude Include="ThemeSimple.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
